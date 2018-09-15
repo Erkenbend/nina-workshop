@@ -90,7 +90,7 @@ public class Game {
         int differenceToAnswer = this.answer - this.latestGuess;
         if (differenceToAnswer == 0) {
             // Success case
-            return String.format("You win! Needed: %d guesses", this.nbGuesses);
+            return String.format(ui.getWinMessage(), this.nbGuesses);
         } else {
             // TODO: here possibility to add more sentences to make the game less boring
             String result;

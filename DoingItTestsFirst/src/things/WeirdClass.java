@@ -1,7 +1,5 @@
 package things;
 
-import java.util.Arrays;
-
 public class WeirdClass {
     /**
      * This function outputs the sum of all integers in the middle argument under several conditions.
@@ -17,9 +15,6 @@ public class WeirdClass {
      * @throws Exception if the magic words are not correct
      */
     public static int sumUnderConditions(String magicWordNumberOne, int[] integersToSum, String magicWordNumberTwo) throws Exception {
-        if (!("Please".equalsIgnoreCase(magicWordNumberOne) && "Thanks".equalsIgnoreCase(magicWordNumberTwo))) {
-            throw new Exception("YOU FORGOT THE MAGIC WORDS!");
-        }
-        return Arrays.stream(integersToSum).reduce(0, (a, b) -> a + Math.max(0, b));
+        return 0;
     }
 }
